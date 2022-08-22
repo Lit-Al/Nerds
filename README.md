@@ -1,4 +1,4 @@
-<h1>Nerds</h1>
+<h1 style="border-color: red">Nerds</h1>
 <p>Вёрстка - Desktop</p>
 <p>Рабочие страницы:</p>
 <ul>
