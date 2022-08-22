@@ -9,3 +9,4 @@
 <ul>
   <li>Кнопка "Напишите нам" - модальное окно</li>
 </ul>
+<p>Ссылка - <a href="https://lit-al.github.io/Nerds/" target="_blank">https://lit-al.github.io/Nerds/</a></p>
