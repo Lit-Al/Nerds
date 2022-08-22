@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Нёрдс</title>
+  <link rel="stylesheet" href="css/normilize.css">
+  <link rel="stylesheet" href="css/min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="container">
+      <nav class="main-navigation">
+        <ul class="navigation-list">
+          <li><a href="#"><img class="main-logo" src="img/nerds-logo.svg" alt="Логотип Нёрдс"></a></li>
+          <li><a href="index.html">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li class="navigation-stick"><a href="#">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li class="cart"><a href="#" class="cart">Корзина</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-catalog">
+    <section class="catalog-title">
+      <h1>Магазин готовых шаблонов</h1>
+    </section>
+    <div class="container">
+      <div class="catalog-content">
+        <section class="catalog-filters">
+          <form style="width: 260px;" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="filter-item" style="max-width: 260px;">
+              <legend>Стоимость:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="
+                      width: 50%;
+                      margin-left: 0%
+                    "></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0" style="
+                    left: 5%
+                  "></div>
+                  <div class="toggle toggle-max" tabindex="0" style="
+                    left: 50%
+                  "></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    от <input type="number" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">
+                    до <input type="number" name="max-price" value="15000">
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="filter-item">
+              <legend>Сетка:</legend>
+              <ul>
+                <li>
+                  <label>
+                    <input type="radio" class="input-radio visually-hidden" name="radio-grid-type" checked>
+                    <span class="radio-button"  tabindex="0"></span>
+                    Адаптивная
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="radio" class="input-radio visually-hidden" name="radio-grid-type">
+                    <span class="radio-button" tabindex="0"></span>
+                    Фиксированная
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="radio" class="input-radio visually-hidden" name="radio-grid-type">
+                    <span class="radio-button" tabindex="0"></span>
+                    Резиновая
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter-item">
+              <legend>Особенности:</legend>
+              <ul>
+                <li>
+                  <label>
+                    <input type="checkbox" class="input-checkbox visually-hidden" name="checkbox-grid-type" checked>
+                    <span class="checkbox"  tabindex="0"></span>
+                    Слайдер
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" class="input-checkbox visually-hidden" name="checkbox-grid-type">
+                    <span class="checkbox"  tabindex="0"></span>
+                    Блок преимуществ
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" class="input-checkbox visually-hidden" name="checkbox-grid-type" checked>
+                    <span class="checkbox"  tabindex="0"></span>
+                    Новости
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" class="input-checkbox visually-hidden" name="checkbox-grid-type">
+                    <span class="checkbox"  tabindex="0"></span>
+                    Галерея
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" class="input-checkbox visually-hidden" name="checkbox-grid-type">
+                    <span class="checkbox"  tabindex="0"></span>
+                    Корзина
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="button filters-button">Показать</button>
+          </form>
+        </section>
+        <section class="catalog-items">
+            <div class="sorting">
+              <p>Сортировать:</p>
+              <ul>
+                <li>по цене</li>
+                <li>по типу</li>
+                <li>по названию</li>
+                <span class="triangle triangle-down"></span>
+                <span class="triangle triangle-up"></span>
+              </ul>
+            </div>
+            <section class="product-cards">
+              <div class="product-card">
+                <div class="product-card_top-cover">
+                  <span class="top-cover-circle"></span>
+                  <span class="top-cover-circle"></span>
+                  <span class="top-cover-circle"></span>
+                </div>
+                <img src="img/sedona.png" width="359" height="578" alt="Готовый шаблон 'SEDONA'">
+                <div class="product-card_bottom-cover">
+                  <p class="card-name">Sedona</p>
+                  <p class="card description">Информационный сайт <br>
+                    для туристов</p>
+                  <button>9 900₽</button>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-card_top-cover">
+                  <span class="top-cover-circle"></span>
+                  <span class="top-cover-circle"></span>
+                  <span class="top-cover-circle"></span>
+                </div>
+                <img src="img/pink.png" width="359" height="578" alt="Готовый шаблон 'PINK APP'">
+                <div class="product-card_bottom-cover">
+                  <p class="card-name">Pink app</p>
+                  <p class="card description">Продуктовый лендинг<br>
+                    приложения для iOS и Android</p>
+                  <button>9 900₽</button>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-card_top-cover">
+                  <span class="top-cover-circle"></span>
+                  <span class="top-cover-circle"></span>
+                  <span class="top-cover-circle"></span>
+                </div>
+                <img src="img/barbershop.png" width="359" height="578" alt="Готовый шаблон 'BARBERSHOP'">
+                <div class="product-card_bottom-cover">
+                  <p class="card-name">Barbershop</p>
+                  <p class="card description">Сайт салона красоты.<br>
+                    Для мужчин, да.</p>
+                  <button>9 900₽</button>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-card_top-cover">
+                  <span class="top-cover-circle"></span>
+                  <span class="top-cover-circle"></span>
+                  <span class="top-cover-circle"></span>
+                </div>
+                <img src="img/mishka.png" width="359" height="578" alt="Готовый шаблон 'MISHKA'">
+                <div class="product-card_bottom-cover">
+                  <p class="card-name">Mishka</p>
+                  <p class="card description">Интернет-магазин <br>
+                    вязаных игрушек</p>
+                  <button>9 900₽</button>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-card_top-cover">
+                  <span class="top-cover-circle"></span>
+                  <span class="top-cover-circle"></span>
+                  <span class="top-cover-circle"></span>
+                </div>
+                <img src="img/a-plus.png" width="359" height="578" alt="Готовый шаблон 'A PLUS'">
+                <div class="product-card_bottom-cover">
+                  <p class="card-name">A plus</p>
+                  <p class="card description">Лендинг курсов повышения<br>
+                     квалификации</p>
+                  <button>9 900₽</button>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-card_top-cover">
+                  <span class="top-cover-circle"></span>
+                  <span class="top-cover-circle"></span>
+                  <span class="top-cover-circle"></span>
+                </div>
+                <img src="img/kvast.png" width="359" height="578" alt="Готовый шаблон 'КВАСТ'">
+                <div class="product-card_bottom-cover">
+                  <p class="card-name">Кваст</p>
+                  <p class="card description">Промо-сайт производителя<br>
+                    крафтового кваса</p>
+                  <button>9 900₽</button>
+                </div>
+              </div>
+              <div class="page-buttons">
+                <button class="page-button">1</button>
+                <button class="page-button">2</button>
+                <button class="page-button">3</button>
+                <button class="page-button next-page">Следующая</button>
+              </div>
+            </section>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="block-map">
+      <div class="container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8034190974663!2d30.315673015843043!3d59.96858428188715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696314db404b36b%3A0x1d934f1978240bba!2zTtGRcmRz!5e0!3m2!1sru!2sru!4v1660251156493!5m2!1sru!2sru" width="1440" height="416" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="contacts">
+          <p>NЁRDS DESIGN STUDIO</p>
+          <p class="addres-text">наб. Реки Карповки, <br>
+            5 лит П, Санкт-Петербург</p>
+          <a href="tel:-78005558628" class="phone-number">+7 800 555-86-28</a>
+          <button class="button communication-button">Напишите нам</button>
+        </div>
+      </div>
+    </div>
+    <div class="sales-block">
+      <div class="container">
+        <div class="social-network-block">
+          <a class="social-network-item">
+            <img src="img/vk-icon.svg" width="26" height="15" alt="Логотип Вконтакте">
+          </a>
+          <a href="#" class="social-network-item">
+            <img src="img/fb-icon.svg" width="12" height="22" alt="Логотип Фейсбук">
+          </a>
+          <a href="#" class="social-network-item">
+            <img src="img/insta-icon.svg" width="21" height="21" alt="Логотип Инстаграм">
+          </a>
+        </div>
+        <div class="sales-text">
+          <p class="sales-text-item">Давайте дружить, это выгодно!</p>
+          <p class="sales-text-item">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
